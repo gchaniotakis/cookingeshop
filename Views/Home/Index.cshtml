@@ -5,9 +5,9 @@
 
     @foreach(var pie in Model.Pies)
     {
-        <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="container-fluid col-lg-4">
             <div class="thumbnail">
-                <img src="@pie.ImageThumbnailUrl" alt="" class="img-responsive"/>
+                <img src="@pie.ImageThumbnailUrl" alt="" class="img-responsive img-thumbnail"/>
                 <div class="caption">
                     <h3 class="pull-right">@pie.Price.ToString("c")</h3>
                     <h3>
